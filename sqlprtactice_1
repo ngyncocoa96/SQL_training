@@ -73,7 +73,7 @@ SELECT
     a.state
 FROM Person p
 LEFT JOIN Address a --> Because "report NULL if a personId is not present in the Adress Table"
-    ON p.personId = a.personId;
+ON p.personId = a.personId;
 
 OR
 
@@ -84,4 +84,4 @@ SELECT
     Address.state
 FROM Person 
 LEFT JOIN Address
-    ON Person.personId = Address.personId;
+ON Person.personId = Address.personId;
